@@ -36,8 +36,7 @@ def pythonText(text="is cool"):
 @app.route("/number/<int:n>", strict_slashes=False)
 def isNumber(n):
     """display “n is a number” only if n is an integer"""
-    if isinstance(n, int):
-        return "{} is a number".format(n)
+    return "{} is a number".format(n)
 
 
 if __name__ == "__main__":
